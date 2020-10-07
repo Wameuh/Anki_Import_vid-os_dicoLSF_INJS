@@ -1,6 +1,7 @@
 import youtube_dl
 import unicodedata
-
+f = open('importanki.txt', 'w')
+f.close() 
 with open("liste_mots_construction.txt", "r", encoding='utf-8') as entree:
     for mot in entree:
         mot_c = mot.strip()
