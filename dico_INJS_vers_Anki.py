@@ -2,7 +2,7 @@ import youtube_dl
 import unicodedata
 f = open('importanki.txt', 'w')
 f.close()
-with open("liste_motstxt", "r", encoding='utf-8') as entree:
+with open("liste_mots.txt", "r", encoding='utf-8') as entree:
     for mot in entree:
         mot_c = mot.strip()
         nom_fichier = unicodedata.normalize('NFD', mot_c).encode("ascii", "ignore").decode('ascii')
