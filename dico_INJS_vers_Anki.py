@@ -10,7 +10,7 @@ with open("liste_mots.txt", "r", encoding='utf-8') as entree:
         url_video=f"http://www.lsfdico-injsmetz.fr/video/{nom_fichier}.flv"
         with youtube_dl.YoutubeDL(\
         {
-        "outtmpl": f"./media/{nom_fichier}.%(ext)s",
+        "outtmpl": f"./media/injs_{nom_fichier}.%(ext)s",
         "format": "bestvideo/best",
         "postprocessors": [{"key": "FFmpegVideoConvertor",
         "preferedformat": "mp4"}],
